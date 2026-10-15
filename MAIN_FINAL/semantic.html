@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Bandung</title>
+    <style>
+        /* CSS Dasar untuk tampilan yang rapi dan responsif */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 25px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav li a:hover {
+            background-color: #007BFF;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            gap: 20px;
+        }
+
+        #content {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        article {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        article h2 {
+            color: #007BFF;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        article p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .featured-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-top: 30px;
+        }
+
+        section h3 {
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        aside {
+            flex: 1;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            align-self: flex-start;
+            position: sticky;
+            top: 70px;
+            text-align: center;
+        }
+
+        aside h2 {
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+
+        aside img {
+            width: 150px;
+            margin: 20px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Responsif untuk layar kecil (Mobile) */
+        @media screen and (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            aside {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bandung</h1>
+        <p>Kota metropolitan terbesar di Provinsi Jawa Barat, sekaligus menjadi ibu kota provinsi tersebut.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#sejarah">Sejarah</a></li>
+            <li><a href="#geografis">Geografis</a></li>
+            <li><a href="#wisata">Wisata</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="content">
+            <!-- Bagian Profil -->
+            <article id="profil">
+                <h2>Profil Bandung</h2>
+                <img src="siluet-bandung.png" alt="Siluet Kota Bandung" class="featured-image">
+                <p>
+                    Bandung merupakan ibu kota Provinsi Jawa Barat. Kota ini dikenal sebagai
+                    salah satu kota metropolitan di Indonesia dan memiliki berbagai destinasi
+                    wisata, bangunan bersejarah, serta kondisi geografis yang khas.
+                </p>
+                <p>
+                    Bandung juga dikenal dengan julukan Kota Kembang dan memiliki banyak
+                    tempat wisata yang menarik untuk dikunjungi.
+                </p>
+            </article>
+
+            <!-- Bagian Sejarah -->
+            <article id="sejarah">
+                <h2>Sejarah Bandung</h2>
+                <!-- Ekstensi diubah dari .jpg menjadi .png -->
+                <img src="history.png" alt="Sejarah Kota Bandung" class="featured-image">
+                <p>
+                    Kata Bandung berasal dari kata bendung atau bendungan karena terbendungnya
+                    Sungai Citarum oleh lava Gunung Tangkuban Parahu yang lalu membentuk telaga.
+                </p>
+                <p>
+                    Legenda yang diceritakan oleh orang-orang tua di Bandung mengatakan bahwa
+                    nama Bandung diambil dari sebuah kendaraan air yang terdiri dari dua perahu
+                    yang diikat berdampingan yang disebut perahu bandung.
+                </p>
+                <p>
+                    Perahu tersebut digunakan oleh Bupati Bandung, R.A. Wiranatakusumah II,
+                    untuk melayari Ci Tarum dalam mencari tempat kedudukan kabupaten yang baru
+                    untuk menggantikan ibu kota yang lama di Dayeuhkolot.
+                </p>
+                <p>
+                    Berdasarkan filosofi Sunda, kata Bandung juga berasal dari kalimat
+                    Nga-Bandung-an Banda Indung, yang merupakan kalimat sakral dan luhur karena
+                    mengandung nilai ajaran Sunda.
+                </p>
+                <p>
+                    Nga-Bandung-an artinya menyaksikan atau bersaksi. Banda adalah segala sesuatu
+                    yang berada di alam hidup yaitu di bumi dan atmosfer, baik makhluk hidup maupun
+                    benda mati. Sinonim dari banda adalah harta.
+                </p>
+                <p>
+                    Indung berarti Ibu atau Bumi, disebut juga sebagai Ibu Pertiwi tempat Banda berada.
+                </p>
+            </article>
+
+            <!-- Bagian Geografis -->
+            <article id="geografis">
+                <h2>Geografis Bandung</h2>
+                <!-- Ekstensi diubah dari .jpg menjadi .png -->
+                <img src="geografis.png" alt="Geografis Kota Bandung" class="featured-image">
+                <p>
+                    Kota Bandung dikelilingi oleh pegunungan, sehingga bentuk morfologi wilayahnya
+                    bagaikan sebuah mangkok raksasa. Secara geografis kota ini terletak di
+                    tengah-tengah Provinsi Jawa Barat.
+                </p>
+                <p>
+                    Bandung berada pada ketinggian sekitar 768 meter di atas permukaan laut.
+                    Titik tertinggi berada di sebelah utara dengan ketinggian sekitar 1.050 meter
+                    di atas permukaan laut.
+                </p>
+                <p>
+                    Sebelah selatan merupakan kawasan rendah dengan ketinggian sekitar 675 meter
+                    di atas permukaan laut.
+                </p>
+                <p>
+                    Kota Bandung dialiri dua sungai utama, yaitu Sungai Cikapundung dan Sungai
+                    Citarum beserta anak-anak sungainya yang pada umumnya mengalir ke arah selatan
+                    dan bertemu di Sungai Citarum.
+                </p>
+                <p>
+                    Dengan kondisi tersebut, Bandung selatan sangat rentan terhadap masalah banjir,
+                    terutama pada musim hujan.
+                </p>
+            </article>
+
+            <!-- Bagian Wisata -->
+            <article id="wisata">
+                <h2>Wisata Bandung</h2>
+                <p>
+                    Sejak dibukanya Jalan Tol Cipularang, kota Bandung telah menjadi tujuan utama
+                    dalam menikmati liburan akhir pekan terutama dari masyarakat yang berasal dari
+                    Jakarta dan sekitarnya.
+                </p>
+                <p>
+                    Selain menjadi kota wisata belanja, kota Bandung juga dikenal dengan sejumlah
+                    besar bangunan lama berarsitektur peninggalan Belanda.
+                </p>
+
+                <section>
+                    <h3>Farm House Lembang</h3>
+                    <!-- Ekstensi diubah dari .jpg menjadi .png -->
+                    <img src="farm-house.png" alt="Farm House Lembang" class="featured-image">
+                    <p>
+                        Berada di jalur utama Bandung-Lembang, Farm House menjadi objek wisata
+                        yang tidak pernah sepi pengunjung.
+                    </p>
+                    <p>
+                        Selain karena letaknya strategis, kawasan ini juga menghadirkan nuansa
+                        wisata khas Eropa. Semua itu diterapkan dalam bentuk spot swafoto
+                        Instagramable.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Observatorium Bosscha</h3>
+                    <!-- Ekstensi diubah dari .jpg menjadi .png -->
+                    <img src="bosscha.png" alt="Observatorium Bosscha" class="featured-image">
+                    <p>
+                        Observatorium Bosscha memiliki beberapa teleskop, antara lain Refraktor
+                        Ganda Zeiss, Schmidt Bimasakti, Refraktor Bamberg, Cassegrain GOTO,
+                        dan Teleskop Surya.
+                    </p>
+                    <p>
+                        Refraktor Ganda Zeiss adalah jenis teleskop terbesar untuk meneropong
+                        bintang. Benda ini diletakkan pada atap kubah sehingga saat teropong
+                        digunakan, atap tersebut harus dibuka.
+                    </p>
+                    <p>
+                        Observatorium Bosscha boleh dikunjungi oleh siapapun, tanpa tiket.
+                        Namun, bagi yang ingin menggunakan teleskop Zeiss, wajib mendaftarkan diri.
+                    </p>
+                    <p>
+                        Untuk instansi atau lembaga pendidikan, diberikan jadwal hari Selasa
+                        sampai Jumat. Sementara itu, kunjungan individu dibuka setiap hari Sabtu.
+                    </p>
+                </section>
+            </article>
+        </div>
+
+        <!-- Kolom Samping (Aside) -->
+        <aside>
+            <h2>Kota Bandung</h2>
+            <p>Kota Kembang</p>
+            <p>Paris van Java</p>
+            <img src="bandung-badge.png" alt="Lambang Kota Bandung">
+            <h3>Lambang</h3>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Belajar Dasar Pemrograman Web &#169; 2019, Dicoding Academy</p>
+    </footer>
+
+</body>
+</html>
